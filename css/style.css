@@ -47,18 +47,14 @@ a {
 
 .navBar{
     border: 1px solid black;
+    width: 1440px;
     height: 79px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .navBar__logo{
-    width: 161px;
-    height: 79px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    padding: 30px 50px;
 }
 .navBar__logo img{
     width: 61px;
@@ -80,6 +76,64 @@ a {
 .navBar__link__ink:hover{
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
+}
+
+.recherchBar{
+    width: 1340px;
+    height: 281px;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 50px 35px 50px;
+}
+.rechercheBar__title{
+    height: 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+}
+.rechercheBar__title h1, p{
+    margin: 0;
+}
+.recherchBar__form{
+    display: flex;
+    flex-direction: rows;
+    width: 377px;
+    height: 49px;
+}
+.recherchBar__form_location{
+    border-top-left-radius: 15px; 
+    border-bottom-left-radius: 15px ;
+    background-color: var(--main-bg-color) ;
+    width: 50px;
+    height: 49px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.recherchBar__form_location i{
+    color:black;
+}
+.recherchBar__form__saisie input[type=search]{
+    border: 1px solid #F2F2F2;
+    outline: none;
+    text-align: center;
+    width: 195px;
+    font-weight: 700px;
+    font-size: 22px;
+}
+.recherchBar__form__button{
+    border-top-right-radius: 15px; 
+    border-bottom-right-radius: 15px ;
+    border: 2px solid var(--main-color);
+    width: 132px;
+    height: 49px;
+    font-weight: 700px;
+    font-size: 18px;
+    color: white;
+    background-color: var(--main-color);
 }
 .section-title {
     margin: 0;
