@@ -357,13 +357,20 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 50px 0 50px;
 }
-.footer-container content{
+.footer-container .content{
     width: 100%;
-    text-align: start;
-    border: 1px solid black;
+    padding: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
-
+.footer-container .content h2{
+    margin: 0;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
