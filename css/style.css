@@ -233,14 +233,13 @@ a {
 .hebergements-cards__rows{
     display: flex;
     flex-direction: row;
-    gap: ;
+    gap:30px ;
     margin-bottom: 30px;
 }
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-   
 }
 .hebergements-cards img{
     width: 240px;
