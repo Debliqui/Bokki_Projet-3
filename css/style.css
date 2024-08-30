@@ -444,5 +444,53 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container{
+        padding: 0;
+    }
+    .navBar{
+        width: 100%;
+        height: 115px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navBar__link{
+        width: 100%;
+        display: flex;
+        align-items: start;
+        height: 36px;
+    }
+    .navBar__link__ink{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    .navBar__link a{
+        width: 100%;
+    }
+    .navBar__link__ink:hover{
+        border: none;
+        border-bottom: 2px solid var(--main-color);
+    }
+    .recherchBar{
+        margin: 20px;
+        width: 335px;
+    }
+    .rechercheBar__title{
+        object-fit: fill;
+        height: 79px;
+    }
+    .recherchBar__form{
+        width: 335px;
+    }
+    .recherchBar__form__saisie input[type="search"]{
+        width: 236px;
+        /* voir comment faire le border-raduis inverse */
+    }
+    .desktop_search{
+        display: none;
+    }
+    .mobile_search{
+        display: block;
+    }
 }
