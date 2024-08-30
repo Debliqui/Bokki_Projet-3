@@ -29,6 +29,7 @@ p{
 }
 
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -48,14 +49,15 @@ a {
 
 /****** Barre de navigation ***********/
 .navBar{
-    width: 100%;
+    width: 1390px; 
+    /* Voir si il y a pas une autre maniere pour poistioner le navBar 50px plus a gauche*/
     height: 79px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .navBar__logo{
-    padding: 30px 50px;
+    padding: 30px 0;
 }
 .navBar__logo img{
     width: 61px;
@@ -86,7 +88,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 30px 50px 35px 50px;
+    margin: 30px 0 35px 0;
 }
 .rechercheBar__title{
     height: 53px;
@@ -227,7 +229,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    margin: 30px 50px 35px 50px;
+    margin: 30px 0 35px 0;
 }
 
 .hebergements-and-populaires section {
@@ -330,13 +332,13 @@ a {
 }
 /****** Activite ***********/
 .activite {
-    margin-left: 50px;
-    margin-right: 50px;
     padding: 30px;
 }
-
-.activite-title {
-    
+.activite-title{
+    margin-bottom: 30px;
+}
+.activite-title h1 {
+    margin: 0;
 }
 
 .activite-cards{
@@ -358,7 +360,6 @@ a {
 }
 
 .activite-cards .card-content {
-    margin: 0;
     padding: 20px 19px;
     box-sizing: border-box;
 }
@@ -373,7 +374,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 50px 0 50px;
+   
 }
 .footer-container .content{
     width: 100%;
