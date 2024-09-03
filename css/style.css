@@ -48,7 +48,6 @@ a {
 
 /****** Barre de navigation ***********/
 .navBar{
-    /* Voir si il y a pas une autre maniere pour poistioner le navBar 50px plus a gauche*/
     width: 1390px;
     height: 79px;
     display: flex;
