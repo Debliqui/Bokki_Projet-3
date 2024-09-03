@@ -104,7 +104,7 @@ a {
     width: 377px;
     height: 49px;
 }
-.recherchBar__form_location{
+.recherchBar__form__location{
     border-top-left-radius: 15px; 
     border-bottom-left-radius: 15px ;
     background-color: var(--main-bg-color) ;
@@ -123,8 +123,9 @@ a {
     outline: none;
     text-align: center;
     width: 195px;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 18px;
+    height: 49px;
 }
 
 .desktop_search{
@@ -519,14 +520,15 @@ a {
         width: 335px;
     }
     .recherchBar__form__saisie input[type="search"]{
-        width: 236px;
-        /* voir comment faire le border-raduis inverse */
+        width: 258px;
     }
     .desktop_search{
         display: none;
     }
     .mobile_search{
         display: block;
+        position: absolute;
+        left: 305px;
     }
     .filterBar{
         height: 161px;
