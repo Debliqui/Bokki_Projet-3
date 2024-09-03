@@ -84,6 +84,7 @@ a {
 .recherchBar{
     width: 1340px;
     height: 281px;
+    gap: 35px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -95,7 +96,7 @@ a {
     flex-direction: column;
     justify-content: space-between ;
 }
-.rechercheBar__title h1, p{
+.recherchBar__title h1, p{
     margin: 0;
 }
 .recherchBar__form{
@@ -154,8 +155,20 @@ a {
 /****** Filtre ***********/
 .filterBar{
     display: flex;
-    flex-direction: rows;
+    flex-direction: row;
     align-items: center;
+}
+.filterBar__title{
+    padding-right: 15px;
+}
+.filterBar__content{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.filterBar__content__row{
+    display: flex;
+    flex-direction: row;
     gap: 15px;
 }
 .filterBar__button{
@@ -165,9 +178,13 @@ a {
     height: 50px;
     padding: 4px 19px;
     display: flex;
-    flex-direction: rows;
     align-items: center;
-    
+}
+.filterBar__button_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .filterBar__button i{
     padding-right: 10px;
@@ -184,14 +201,14 @@ a {
     height: 24px;
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 .info__icone{
     width: 24px;
-    height: 23px;
+    height: 24px;
     border: 1px solid var(--filter-bg-color);
     border-radius: 24px;
     text-align: center;
+    margin-right: 10px;
 }
 .info__icone i{
     font-size: 10px;
@@ -404,6 +421,24 @@ a {
     .navBar{
         width: 974px;
     }
+    .recherchBar{
+        height: 322px;
+    }
+    .recherchBar__title{
+        height: 53px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .filterBar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .filterBar__title{
+        margin: 0;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -464,6 +499,7 @@ a {
         display: flex;
         align-items: start;
         justify-content: center;
+        border-bottom: 2px solid var(--main-bg-color);
     }
     .navBar__link a{
         width: 100%;
@@ -473,11 +509,11 @@ a {
         border-bottom: 2px solid var(--main-color);
     }
     .recherchBar{
-        margin: 20px;
+        margin: 30px 20px 35px 20px;
         width: 335px;
+        height: 432px;
     }
-    .rechercheBar__title{
-        object-fit: fill;
+    .recherchBar__title{
         height: 79px;
     }
     .recherchBar__form{
@@ -492,5 +528,81 @@ a {
     }
     .mobile_search{
         display: block;
+    }
+    .filterBar{
+        height: 161px;
+    }
+    .filterBar__content{
+        width: 335px;
+        display: flex;
+        flex-direction: column;
+    }
+    .filterBar__button{
+        width: 100%;
+    }
+    .filterBar__button_content h2{
+        font-size: 14px;
+    }
+    .info{
+        width: 335px;
+        height: 38px;
+    }
+    .info p{
+        width: 301px;
+    }
+    .hebergements-and-populaires{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .hebergements-and-populaires section {
+        padding: 20px;
+        border-radius: 0;
+    }
+    .hebergements-and-populaires .hebergements{
+        background-color: white;
+    }
+    .populaires{
+        margin: 0;
+        padding: 30px 20px;
+        
+    }
+    .populaires-cards {
+        flex-direction: column;
+    }
+    .populaires-cards a{
+        width: 100%;
+    }
+    .populaires-cards .card{
+        margin-top: 15px;
+    }
+    .hebergements-cards{
+        flex-direction: column;
+    }
+    .hebergements_title{
+        margin-bottom: 15px;
+    }
+    .hebergements-cards__rows{
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    .activite-cards{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .activite-cards img{
+        height: 141px;
+    }
+    .activite-cards .card-content{
+        height: 59px;
+    }
+    .footer-container{
+        margin-top: 35px;
+        flex-direction: column;
+        padding: 30px;
+        gap: 50px;
+    }
+    .footer-container .content{
+        padding: 0;
     }
 }
