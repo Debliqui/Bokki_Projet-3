@@ -10,17 +10,17 @@
 }
 
 h1{
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 22px;
 }
 
 h2{
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 18px;
 }
 
 p{
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 16px;
 }
 
@@ -48,7 +48,7 @@ a {
 
 /****** Barre de navigation ***********/
 .navBar{
-    width: 1390px;
+   
     height: 79px;
     display: flex;
     flex-direction: row;
@@ -62,11 +62,11 @@ a {
     height: 19px;
 }
 .navBar__link{
-    width: 344px;
+    width: 244px;
     height: 35px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: end;
 }
 .navBar__link__ink{
@@ -100,7 +100,7 @@ a {
 }
 .recherchBar__form{
     display: flex;
-    flex-direction: rows;
+    flex-direction: row;
     width: 377px;
     height: 49px;
 }
@@ -115,7 +115,7 @@ a {
     justify-content: center;
     align-items: center;
 }
-.recherchBar__form_location i{
+.recherchBar__form__location i{
     color:black;
 }
 .recherchBar__form__saisie input[type=search]{
@@ -129,13 +129,16 @@ a {
 }
 
 .desktop_search{
-    
     border-top-right-radius: 15px; 
     border-bottom-right-radius: 15px ;
     border: 1px solid var(--main-color);
     color: white;
     background-color: var(--main-color);
     padding: 0px 16px;
+}
+.desktop_search strong{
+    font-weight: 700;
+    font-size: 18px;
 }
 .mobile_search{
     display: none;
@@ -179,18 +182,14 @@ a {
     padding: 4px 19px;
     display: flex;
     align-items: center;
-}
-.filterBar__button_content{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 .filterBar__button i{
     padding-right: 10px;
     font-size: 17px;
 }
-.filterBar__button h2{
+.filterBar__button span{
+    font-weight: 700;
     font-size: 17px;
 }
 .filterBar__button:hover{
@@ -418,9 +417,6 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .navBar{
-        width: 974px;
-    }
     .recherchBar{
         height: 322px;
     }
@@ -435,6 +431,10 @@ a {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
+    }
+    .filterBar__button span{
+        font-weight: 700;
+        font-size: 16px;
     }
     .filterBar__title{
         margin: 0;
@@ -541,7 +541,8 @@ a {
     .filterBar__button{
         width: 100%;
     }
-    .filterBar__button_content h2{
+    .filterBar__button span{
+        font-weight: 700;
         font-size: 14px;
     }
     .info{
