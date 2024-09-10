@@ -89,7 +89,7 @@ a {
     justify-content: space-between;
     margin: 30px 0 35px 0;
 }
-.rechercheBar__title{
+.recherchBar__title{
     height: 53px;
     display: flex;
     flex-direction: column;
@@ -302,7 +302,12 @@ a {
     margin: 0;
 }
 .hebergements-cards .card-subtitle {
+    font-size: 14px;
     margin: 0;
+}
+.hebergements-cards span{
+    font-size: 18px;
+    font-weight: 700;
 }
 /****** Populaires ***********/
 .populaires {
@@ -355,7 +360,8 @@ a {
 .activite-title{
     margin-bottom: 30px;
 }
-.activite-title h1 {
+.activite-title h2 {
+    font-size: 22px;
     margin: 0;
 }
 
@@ -398,7 +404,18 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   
+}
+.footer-container h2{
+    border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+			clip-path: inset(50%) !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
 }
 .footer-container .content{
     width: 100%;
@@ -409,7 +426,9 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
 }
-.footer-container .content h2{
+.footer-container .content h3{
+    font-size: 18px;
+    font-weight: 700;
     margin: 0;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
