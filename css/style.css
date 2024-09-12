@@ -34,6 +34,19 @@ body {
     justify-content: center;
 }
 
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+			clip-path: inset(50%) !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
+
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -139,18 +152,6 @@ a {
 .desktop_search strong{
     font-weight: 700;
     font-size: 18px;
-}
-.sr-only {
-	border: 0 !important;
-	clip: rect(1px, 1px, 1px, 1px) !important;
-	-webkit-clip-path: inset(50%) !important;
-			clip-path: inset(50%) !important;
-	height: 1px !important;
-	overflow: hidden !important;
-	padding: 0 !important;
-	position: absolute !important;
-	width: 1px !important;
-	white-space: nowrap !important;
 }
 .mobile_search{
     display: none;
@@ -416,18 +417,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-.footer-container h2{
-    border: 0 !important;
-	clip: rect(1px, 1px, 1px, 1px) !important;
-	-webkit-clip-path: inset(50%) !important;
-			clip-path: inset(50%) !important;
-	height: 1px !important;
-	overflow: hidden !important;
-	padding: 0 !important;
-	position: absolute !important;
-	width: 1px !important;
-	white-space: nowrap !important;
 }
 .footer-container .content{
     width: 100%;
